@@ -1,0 +1,349 @@
+
+
+Raw Code
+
+Rendered
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magesh R. S. - Resume | Rathinam Technical Campus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+      line-height: 1.5;
+      padding: 32px 16px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 48px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e2e8f0;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      padding-bottom: 24px;
+      border-bottom: 2px solid #0f172a;
+      margin-bottom: 28px;
+    }
+    .header-text { flex: 1; }
+    .name {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+    .role {
+      font-size: 17px;
+      font-weight: 600;
+      color: #2563eb;
+      margin-bottom: 6px;
+    }
+    .college {
+      font-size: 14px;
+      font-weight: 500;
+      color: #475569;
+      margin-bottom: 12px;
+    }
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      font-size: 13px;
+      color: #475569;
+    }
+    .contact-item a {
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-item a:hover { text-decoration: underline; }
+    .photo-frame {
+      width: 110px;
+      height: 110px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid #e2e8f0;
+      flex-shrink: 0;
+      background: #f1f5f9;
+    }
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .section { margin-bottom: 28px; }
+    .section-title {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      color: #0f172a;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 6px;
+      margin-bottom: 14px;
+    }
+    .summary-text {
+      font-size: 14px;
+      color: #334155;
+      line-height: 1.65;
+    }
+    .entry { margin-bottom: 16px; }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .entry-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .entry-date {
+      font-size: 13px;
+      color: #64748b;
+      font-weight: 500;
+    }
+    .entry-subtitle {
+      font-size: 13.5px;
+      color: #3b82f6;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .bullets {
+      list-style-type: disc;
+      padding-left: 20px;
+      font-size: 13.5px;
+      color: #334155;
+      line-height: 1.6;
+    }
+    .bullets li { margin-bottom: 4px; }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    .skill-row {
+      display: flex;
+      gap: 12px;
+      font-size: 13.5px;
+    }
+    .skill-label {
+      font-weight: 700;
+      color: #0f172a;
+      width: 190px;
+      flex-shrink: 0;
+    }
+    .skill-value {
+      color: #334155;
+      flex: 1;
+    }
+    .tech-tags {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #0284c7;
+      margin-top: 3px;
+    }
+    .actions-bar {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      display: flex;
+      gap: 12px;
+      z-index: 100;
+    }
+    .action-btn {
+      padding: 10px 18px;
+      background: #0f172a;
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .action-btn:hover { background: #1e293b; }
+    @media print {
+      body { background: white; padding: 0; font-size: 11pt; }
+      .container { border: none; box-shadow: none; padding: 0; max-width: 100%; }
+      .actions-bar { display: none !important; }
+      @page { margin: 10mm; size: A4; }
+    }
+  </style>
+</head>
+<body>
+  <div class="actions-bar">
+    <button class="action-btn" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <main class="container">
+    <header class="header">
+      <div class="header-text">
+        <h1 class="name">Magesh R. S.</h1>
+        <div class="role">Bachelor of Engineering in CSE (Artificial Intelligence &amp; Machine Learning)</div>
+        <div class="college">Rathinam Technical Campus · Eachanari, Coimbatore, Tamil Nadu</div>
+        <div class="contact-bar">
+          <div class="contact-item">📧 <a href="mailto:r.s.mageshvaran25@gmail.com">r.s.mageshvaran25@gmail.com</a></div>
+          <div class="contact-item">📞 +91 94882 10394</div>
+          <div class="contact-item">📍 Coimbatore, Tamil Nadu, India</div>
+          <div class="contact-item">🔗 <a href="https://linkedin.com/in/magesh-aiml" target="_blank">linkedin.com/in/magesh-aiml</a></div>
+          <div class="contact-item">💻 <a href="https://github.com/magesh-aiml" target="_blank">github.com/magesh-aiml</a></div>
+        </div>
+      </div>
+      <div class="photo-frame"><img src="/src/assets/images/magesh_profile_photo_1791353137425.jpg" alt="Magesh R. S. photo" /></div>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="summary-text">Dedicated Computer Science and Engineering (AIML) undergraduate at Rathinam Technical Campus with solid expertise in Machine Learning, Deep Learning, Computer Vision, and Modern Web Architectures. Passionate about architecting intelligent algorithms, fine-tuning neural networks, and developing performant full-stack applications. Strong problem-solving aptitude demonstrated through competitive coding and practical AI campus deployments. Seeking an internship or entry-level software/AI engineering role to contribute to high-impact products.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+      
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Rathinam Technical Campus</span>
+            <span class="entry-date">2023 – 2027 (Expected)</span>
+          </div>
+          <div class="entry-subtitle">B.E. Computer Science &amp; Engineering (AI &amp; ML) · <strong style="color:#0f172a">CGPA: 8.74 / 10.0</strong></div>
+          <ul class="bullets"><li>Relevant Coursework: Deep Learning, Machine Learning Foundations, Data Structures &amp; Algorithms, Design and Analysis of Algorithms, Database Management Systems (DBMS), Computer Vision, Natural Language Processing, Operating Systems.</li><li>Academic Distinctions: Ranked Top 5% in Department Academic Merit List; Active Participant in Technical Hackathons and Robotics Cell.</li></ul>
+        </div>
+      
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Higher Secondary School</span>
+            <span class="entry-date">2021 – 2023</span>
+          </div>
+          <div class="entry-subtitle">Higher Secondary Certificate (Class XII - State Board) · <strong style="color:#0f172a">Percentage: 92.6%</strong></div>
+          <ul class="bullets"><li>Scored 98/100 in Computer Science and 95/100 in Mathematics.</li><li>School Topper in Computer Science Practical Examination.</li></ul>
+        </div>
+      
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Secondary School</span>
+            <span class="entry-date">2020 – 2021</span>
+          </div>
+          <div class="entry-subtitle">Secondary School Leaving Certificate (Class X - State Board) · <strong style="color:#0f172a">Percentage: 94.2%</strong></div>
+          <ul class="bullets"><li>Distinction in Science and Mathematics.</li></ul>
+        </div>
+      
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        
+          <div class="skill-row">
+            <span class="skill-label">AI &amp; Machine Learning:</span>
+            <span class="skill-value">Python, PyTorch, TensorFlow, Scikit-Learn, OpenCV, Hugging Face Transformers, NumPy, Pandas, Matplotlib / Seaborn, Deep Learning (CNN, RNN, LSTM)</span>
+          </div>
+        
+          <div class="skill-row">
+            <span class="skill-label">Programming &amp; Web Dev:</span>
+            <span class="skill-value">C++, C, TypeScript, JavaScript (ES6+), React.js, Node.js, Express, Tailwind CSS, HTML5 / CSS3, RESTful APIs</span>
+          </div>
+        
+          <div class="skill-row">
+            <span class="skill-label">Databases &amp; Tools:</span>
+            <span class="skill-value">MySQL, PostgreSQL, SQLite, Git &amp; GitHub, Docker (Basics), Linux / Bash, VS Code, Google Colab, Postman</span>
+          </div>
+        
+          <div class="skill-row">
+            <span class="skill-label">Core Computer Science:</span>
+            <span class="skill-value">Data Structures &amp; Algorithms (DSA), Object-Oriented Programming (OOP), Database Management Systems (DBMS), Operating Systems Concepts, Model Evaluation &amp; Tuning, Agile Collaboration</span>
+          </div>
+        
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Key Projects (AI & Software Engineering)</h2>
+      
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Autonomous Medical Imaging Diagnosis (Chest X-Ray Pneumonia &amp; COVID Detector)</span>
+            <span class="entry-date">Jan 2026 – Mar 2026</span>
+          </div>
+          <div class="tech-tags">Tech: PyTorch · EfficientNet-B3 · OpenCV · FastAPI · React</div>
+          <ul class="bullets" style="margin-top: 6px;">
+            <li>Architected a deep convolutional pipeline using fine-tuned EfficientNet-B3 on 15,000+ chest radiographs, attaining 96.4% test accuracy and 0.97 ROC-AUC score.</li><li>Implemented Grad-CAM explainability heatmaps, highlighting lung pathology regions to foster clinical transparency and trust.</li><li>Created a responsive web console allowing clinicians to drag-and-drop X-rays and receive diagnostic reports in under 150ms.</li>
+          </ul>
+        </div>
+      
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Rathinam Smart Campus: Facial Recognition Attendance &amp; Liveness Checker</span>
+            <span class="entry-date">Sep 2025 – Dec 2025</span>
+          </div>
+          <div class="tech-tags">Tech: Python · OpenCV · MTCNN · FaceNet · SQLite · Streamlit</div>
+          <ul class="bullets" style="margin-top: 6px;">
+            <li>Engineered an automated face detection and recognition pipeline processing 30 FPS video feed for classroom and lab attendance at Rathinam Technical Campus.</li><li>Integrated eye-blink frequency and passive optical liveness detection to eliminate photo and digital screen spoofing with 99.2% accuracy.</li><li>Connected SQLite database for real-time student presence logging, saving faculty 15 minutes of manual roll-call per session and automatically generating attendance spreadsheets.</li>
+          </ul>
+        </div>
+      
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">AgroSense: AI Plant Leaf Disease Identifier &amp; Crop Advisory</span>
+            <span class="entry-date">Jun 2025 – Aug 2025</span>
+          </div>
+          <div class="tech-tags">Tech: TensorFlow · MobileNetV2 · Flask · Tailwind CSS · NumPy</div>
+          <ul class="bullets" style="margin-top: 6px;">
+            <li>Trained lightweight MobileNetV2 architecture on 20,000+ leaf images across 14 crop disease categories, delivering 94.8% classification accuracy.</li><li>Applied 8-bit post-training quantization, compressing model size from 90MB to 16MB for instant offline mobile browser inference.</li><li>Coupled model predictions with bilingual (English &amp; Tamil) remedial fertilizer and organic pesticide recommendations.</li>
+          </ul>
+        </div>
+      
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Multilingual Document Summarizer &amp; Legal RAG Assistant</span>
+            <span class="entry-date">Mar 2025 – May 2025</span>
+          </div>
+          <div class="tech-tags">Tech: Python · LangChain · FAISS · Hugging Face · Sentence-Transformers</div>
+          <ul class="bullets" style="margin-top: 6px;">
+            <li>Built a semantic search and question-answering tool using chunked embeddings and vector retrieval over multi-page PDF documents.</li><li>Engineered contextual prompt templates reducing hallucination rate while delivering concise bulleted summaries and clause breakdowns.</li>
+          </ul>
+        </div>
+      
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Certifications & Honors</h2>
+      <ul class="bullets">
+        
+          <li><strong>Deep Learning Specialization (5 Courses)</strong> — DeepLearning.AI / Coursera (Instructor: Andrew Ng) (2025)</li>
+        
+          <li><strong>Machine Learning with Python (Elite Silver Certificate)</strong> — NPTEL / IIT Madras (2025)</li>
+        
+          <li><strong>Python for Data Science and Machine Learning Bootcamp</strong> — Udemy (2024)</li>
+        
+          <li><strong>Foundations of Cloud Computing &amp; DevOps</strong> — AWS Academy (2024)</li>
+        
+        
+          <li><strong>Smart India Hackathon Finalist (Internal Campus Level)</strong>: Selected among top 3 teams in Rathinam Technical Campus for developing an AI-driven public grievance sorting tool.</li>
+        
+          <li><strong>250+ Algorithmic Challenges Solved</strong>: Regular problem solver on LeetCode and HackerRank specializing in Arrays, Dynamic Programming, Graphs, and Trees in Python &amp; C++.</li>
+        
+          <li><strong>Technical Student Coordinator — Rathinam AI Club</strong>: Conducted hands-on workshops on &quot;Introduction to Neural Networks with PyTorch&quot; for 120+ first and second-year juniors.</li>
+        
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
